@@ -4,6 +4,8 @@ namespace Entities.Concrete;
 
 public class Customer: Entity<int>
 {
+   // public int CorporateCustomerId;
+   // public int IndividualCustomerId;
     public string FirstName;
     public string LastName;
     public object Email;
