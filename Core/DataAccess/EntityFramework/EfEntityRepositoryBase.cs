@@ -55,4 +55,3 @@ public class EfEntityRepositoryBase<TEntity, TEntityId, TContext> : IEntityRepos
         return entity;
     }
 } 
-}
