@@ -18,13 +18,4 @@
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Responses\Car\" />
-    <Folder Include="Responses\CorporateCustomer\" />
-    <Folder Include="Responses\Customer\" />
-    <Folder Include="Responses\Fuel\" />
-    <Folder Include="Responses\IndividualCustomer\" />
-    <Folder Include="Responses\Transmission\" />
-  </ItemGroup>
-
 </Project>
