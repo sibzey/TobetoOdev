@@ -2,6 +2,7 @@ namespace Business.Dtos.Car;
 
 public class CarListItemDto
 {
+    public int Id { get; set; }
     public int ModelId { get; set; }
     public string ModelName { get; set; }
     public int BrandId { get; set; }

@@ -28,12 +28,36 @@ public static class ServiceCollectionBusinessExtension
             .AddScoped<BrandBusinessRules>();
         // Fluent
         // Singleton: Tek bir nesne oluşturur ve herkese onu verir.
-        // Ek ödev diğer yöntemleri araştırınız.
 
         services
             .AddScoped<IModelService, ModelManager>()
             .AddScoped<IModelDal, EfModelDal>()
             .AddScoped<ModelBusinessRules>(); // Fluent
+        services
+            .AddScoped<ICarService, CarManager>()
+            .AddScoped<ICarDal, EfCarDal>()
+            .AddScoped<CarBusinessRules>();
+        services
+            .AddScoped<ICustomerService, CustomerManager>()
+            .AddScoped<ICustomerDal, EfCustomerDal>()
+            .AddScoped<CustomerBusinessRules>();
+        services
+            .AddScoped<IIndividualCustomerService, IndividualCustomerManager>()
+            .AddScoped<IIndividualCustomerDal, EfIndividualCustomerDal>()
+            .AddScoped<IndividualCustomerBusinessRules>();
+        services
+            .AddScoped<ICorporateCustomerService, CorporateCustomerManager>()
+            .AddScoped<ICorporateCustomerDal, EfCorporateCustomerDal>()
+            .AddScoped<CorporateCustomerBusinessRules>();
+        services
+            .AddScoped<IFuelService, FuelManager>()
+            .AddScoped<IFuelDal, EfFuelDal>()
+            .AddScoped<FuelBusinessRules>();
+        services
+            .AddScoped<ITransmissionService, TransmissionManager>()
+            .AddScoped<ITransmissionDal, EfTransmissionDal>()
+            .AddScoped<TransmissionBusinessRules>();
+        
 
         services.AddAutoMapper(Assembly.GetExecutingAssembly()); // AutoMapper.Extensions.Microsoft.DependencyInjection NuGet Paketi
         // Reflection yöntemiyle Profile class'ını kalıtım alan tüm class'ları bulur ve AutoMapper'a ekler.

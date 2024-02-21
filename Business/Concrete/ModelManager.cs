@@ -108,6 +108,10 @@ public class ModelManager : IModelService
         //    .ToList();
         return response;
     }
+    public Model? GetById(int id)
+    {
+        return _modelDal.Get(i => i.Id == id);
+    }
 
     public UpdateModelResponse Update(UpdateModelRequest request)
     {
