@@ -10,3 +10,16 @@
 /Users/sozey/Downloads/tobeto-2a-csharp-main/Core/obj/Debug/net8.0/refint/Core.dll
 /Users/sozey/Downloads/tobeto-2a-csharp-main/Core/obj/Debug/net8.0/Core.pdb
 /Users/sozey/Downloads/tobeto-2a-csharp-main/Core/obj/Debug/net8.0/ref/Core.dll
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/bin/Debug/net8.0/Core.deps.json
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/bin/Debug/net8.0/Core.dll
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/bin/Debug/net8.0/Core.pdb
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.csproj.AssemblyReference.cache
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.sourcelink.json
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.dll
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/refint/Core.dll
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/Core.pdb
+/Users/sozey/Documents/GitHub/TobetoOdev/Core/obj/Debug/net8.0/ref/Core.dll

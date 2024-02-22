@@ -2,6 +2,7 @@
 using Business.Abstract;
 using Business.BusinessRules;
 using Business.Concrete;
+using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.EntityFramework.Contexts;
@@ -22,6 +23,7 @@ public static class ServiceCollectionBusinessExtension
         IConfiguration configuration
     )
     {
+        services.AddScoped<ITokenHelper, JwtTokenHelper>();
         services
             .AddScoped<IBrandService, BrandManager>()
             .AddScoped<IBrandDal, EfBrandDal>()
@@ -57,6 +59,9 @@ public static class ServiceCollectionBusinessExtension
             .AddScoped<ITransmissionService, TransmissionManager>()
             .AddScoped<ITransmissionDal, EfTransmissionDal>()
             .AddScoped<TransmissionBusinessRules>();
+        services
+            .AddScoped<IUserService, UserManager>()
+            .AddScoped<IUserDal, EfUserDal>();
         
 
         services.AddAutoMapper(Assembly.GetExecutingAssembly()); // AutoMapper.Extensions.Microsoft.DependencyInjection NuGet Paketi

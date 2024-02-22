@@ -142,3 +142,4 @@ public class ExceptionMiddleware
         return httpContext.Response.WriteAsync(JsonConvert.SerializeObject(problemDetails));
     }
 }
+
