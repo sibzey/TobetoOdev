@@ -40,10 +40,12 @@ public class BrandsController : ControllerBase
 
     //[HttpPost("/add")] // POST http://localhost:5245/api/brands/add
     [HttpPost] // POST http://localhost:5245/api/brands
+    //[Authorize] conroller çerisinde kullanılır.
     public ActionResult<AddBrandResponse> Add(AddBrandRequest request)
     {
         try
         {
+            //log kodları burada
             AddBrandResponse response = _brandService.Add(request);
 
             //return response; // 200 OK
