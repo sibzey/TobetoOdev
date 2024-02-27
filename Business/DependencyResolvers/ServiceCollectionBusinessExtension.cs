@@ -30,7 +30,8 @@ public static class ServiceCollectionBusinessExtension
             .AddScoped<BrandBusinessRules>();
         // Fluent
         // Singleton: Tek bir nesne oluşturur ve herkese onu verir.
-
+        services
+            .AddScoped<IUserRoleDal, EfUserRoleDal>();
         services
             .AddScoped<IModelService, ModelManager>()
             .AddScoped<IModelDal, EfModelDal>()

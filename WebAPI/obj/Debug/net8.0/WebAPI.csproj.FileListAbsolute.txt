@@ -296,3 +296,4 @@
 /Users/sozey/Documents/GitHub/TobetoOdev/WebAPI/obj/Debug/net8.0/ref/WebAPI.dll
 /Users/sozey/Documents/GitHub/TobetoOdev/WebAPI/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
 /Users/sozey/Documents/GitHub/TobetoOdev/WebAPI/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/sozey/Documents/GitHub/TobetoOdev/WebAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -6,4 +6,6 @@ public class TokenOptions
     public string Audience { get; set; }
     public int ExpirationTime { get; set; }
     public string SecurityKey { get; set; }
+    
+    //public string Roles { get; set; }
 }

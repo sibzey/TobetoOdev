@@ -12,22 +12,27 @@ public class UserManager : IUserService
 {
     private readonly IUserDal _userDal;
     private readonly ITokenHelper _tokenHelper;
-    public UserManager(IUserDal userDal, ITokenHelper tokenHelper)
+    private readonly IUserRoleDal _userRoleDal;
+    public UserManager(IUserDal userDal, ITokenHelper tokenHelper,IUserRoleDal userRoleDal)
     {
         _userDal = userDal;
         _tokenHelper = tokenHelper;
+        _userRoleDal = userRoleDal;
     }
 
     public AccessToken Login(LoginRequest request)
     {
         User? user = _userDal.Get(i => i.Email == request.Email);
         // Business Rules...
-
+        UserRole? userRole = _userRoleDal.Get(i => i.Id == request.UserRoleId);
         bool isPasswordCorrect = HashingHelper.VerifyPassword(request.Password, user.PasswordHash, user.PasswordSalt);
 
         if (!isPasswordCorrect)
-            throw new Exception("Şifre yanlış.");
-        return _tokenHelper.CreateToken(user);
+        {
+           throw new Exception("Şifre yanlış."); 
+        }
+            
+        return _tokenHelper.CreateToken(user, userRole);
     }
 
     public void Register(RegisterRequest request)
